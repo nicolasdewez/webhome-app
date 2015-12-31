@@ -1,0 +1,4 @@
+{
+    "url": "?WEBHOME_URL?/api/auth",
+    "getUserInformationUri": "/user"
+}

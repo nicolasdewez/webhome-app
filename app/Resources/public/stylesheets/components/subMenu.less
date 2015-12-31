@@ -1,0 +1,74 @@
+.subMenu {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    border-right: 1px solid @buttonFg;
+    border-left: 1px solid @buttonFg;
+
+    & + & {
+        border-left: none;
+    }
+
+    &-link {
+        text-align: center;
+        line-height: 25px;
+        padding: 10px;
+        position: relative;
+        display: block;
+        min-width: 110px;
+        color: @dark-gray;
+
+        &,
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    &-image {
+        display: block;
+        margin: 0 auto;
+        font-size: 2.5em;
+    }
+
+    &-link-active &-label {
+        color: white;
+    }
+
+    // Calendar
+    &-calendar &-link {
+        .menuLink(@calendarDomainColor);
+    }
+
+    &-calendar .menuItem-link:hover {
+        color: white;
+        background-color: @calendarDomainColor;
+    }
+
+    &-calendar.open &-link {
+        background: white;
+    }
+
+    // Home
+    &-home &-link {
+        .menuLink(@homeDomainColor);
+    }
+}
+
+.menuLink(@domainColor) {
+    &:hover,
+    &:focus {
+        color: @domainColor;
+    }
+
+    &:hover {
+        background: white;
+    }
+
+    &-active,
+    &-active:hover,
+    &-active:focus {
+        background-color: @domainColor;
+        color: white;
+    }
+}

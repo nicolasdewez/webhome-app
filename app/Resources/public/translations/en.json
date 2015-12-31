@@ -1,0 +1,44 @@
+{
+    "auth": {
+        "error": {
+            "failed": "An error occurred while get user information"
+        }
+    },
+
+    "header": {
+        "applications": "Others applications",
+        "showAccount": "My account",
+        "changePassword": "Change my password",
+        "logout": "Logout"
+    },
+
+    "menu": {
+        "home": {
+            "title": "Home"
+        },
+        "calendar": {
+            "title": "Calendar",
+            "jobCalendar": "Job calendar",
+            "nurseryCalendar": "Nursery calendar",
+            "jobReport": "Job report",
+            "nurseryReport": "Nursery report"
+        }
+    },
+
+    "home": {
+        "title": "Home"
+    },
+
+    "cald": {
+        "title": "Calendar",
+        "calendar": {
+            "job": {
+                "title": "Job",
+                "calendar": "Calendar"
+            }
+        },
+        "error": {
+            "getCalendarsFailed": "An error occurred while get calendars"
+        }
+    }
+}

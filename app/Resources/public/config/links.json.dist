@@ -1,0 +1,41 @@
+{
+    "header": {
+      "url": "http://localhost:8000/app_dev.php",
+      "urlAuth": "http://localhost:8001/app_dev.php",
+      "myAccount": "/show-account",
+      "changePassword": "/change-password",
+      "logout": "/logout"
+    },
+    "domains": [
+        {
+            "key": "home",
+            "name": "menu.home.title",
+            "url": "/home"
+        },
+        {
+            "key": "calendar",
+            "name": "menu.calendar.title",
+            "links": [
+                {
+                    "name": "menu.calendar.jobCalendar",
+                    "url": "/cald/calendar/job"
+                },
+                {
+                    "name": "menu.calendar.nurseryCalendar",
+                    "url": "/calendar"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "menu.calendar.jobReport",
+                    "url": "/calendar"
+                },
+                {
+                    "name": "menu.calendar.nurseryReport",
+                    "url": "/calendar"
+                }
+            ]
+        }
+    ]
+}

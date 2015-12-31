@@ -1,0 +1,44 @@
+{
+    "auth": {
+        "error": {
+            "failed": "Une erreur est survenue lors de la récupération des informations utilisateur"
+        }
+    },
+
+    "header": {
+      "applications": "Autres applications",
+      "showAccount": "Mon compte",
+      "changePassword": "Changer mon mot de passe",
+      "logout": "Se déconnecter"
+    },
+
+    "menu": {
+        "home": {
+          "title": "Accueil"
+        },
+        "calendar": {
+            "title": "Calendar",
+            "jobCalendar": "Agenda professionnel",
+            "nurseryCalendar": "Agenda de garderie",
+            "jobReport": "Reporting professionnel",
+            "nurseryReport": "Reporting de garderie"
+        }
+    },
+
+    "home": {
+        "title": "Accueil"
+    },
+
+    "cald": {
+        "title": "Agenda",
+        "calendar": {
+            "job": {
+                "title": "Professionnel",
+                "calendar": "Agenda"
+            }
+        },
+        "error": {
+            "getCalendarsFailed": "Une erreur est survenue lors de la récupération des agendas"
+        }
+    }
+}

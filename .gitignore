@@ -1,0 +1,16 @@
+/app/config/parameters.yml
+/app/Resources/public/config/*.json
+/bin/
+!bin/envify
+/build/
+/composer.phar
+/vendor/
+/web/bundles/
+/app/bootstrap.php.cache
+/app/cache/*
+!app/cache/.gitkeep
+/app/logs/*
+!app/logs/.gitkeep
+/app/phpunit.xml
+/node_modules/
+/bower_components/

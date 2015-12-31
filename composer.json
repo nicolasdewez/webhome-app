@@ -1,0 +1,47 @@
+{
+    "name": "ndewez/webhome-app",
+    "license": "MIT",
+    "type": "project",
+    "description": "WebHome Project - App",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
+    },
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/symfony": "~2.8",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/framework-extra-bundle": "^3.0.2",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "jms/serializer-bundle": "~1.0",
+        "nicolasdewez/webhome-common": "dev-master",
+        "nicolasdewez/webhome-auth-api": "dev-master",
+        "nicolasdewez/webhome-calendar-api": "dev-master"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "~2.7"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
+    }
+}
