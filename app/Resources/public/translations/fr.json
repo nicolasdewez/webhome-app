@@ -25,20 +25,80 @@
         }
     },
 
+    "breadcrumb": {
+        "home": "Accueil",
+        "cald": {
+            "calendar": "Agenda",
+            "jobCalendar": "Professionnel",
+            "nurseryCalendar": "Garderie"
+        }
+    },
+
+    "popin": {
+        "footer": {
+            "ok": "Oui",
+            "cancel": "Annuler"
+        }
+    },
+
     "home": {
         "title": "Accueil"
     },
 
     "cald": {
-        "title": "Agenda",
-        "calendar": {
-            "job": {
-                "title": "Professionnel",
-                "calendar": "Agenda"
+        "today": "Aujourd'hui",
+        "days": {
+            "monday": "Lundi",
+            "tuesday": "Mardi",
+            "wednesday": "Mercredi",
+            "thursday": "Jeudi",
+            "friday": "Vendredi",
+            "saturday": "Samedi",
+            "sunday": "Dimanche"
+        },
+        "months": {
+            "0": "Janvier",
+            "1": "Février",
+            "2": "Mars",
+            "3": "Avril",
+            "4": "Mai",
+            "5": "Juin",
+            "6": "Juillet",
+            "7": "Août",
+            "8": "Septembre",
+            "9": "Octobre",
+            "10": "Novembre",
+            "11": "Décembre"
+        },
+        "jobCalendar": {
+            "title": "Agenda Professionnel",
+            "label": {
+                "calendar": "Agenda",
+                "date": "Date",
+                "job": "Poste",
+                "save": "Enregistrer"
+            },
+            "placeholder": {
+                "job": "Sélectionner un poste",
+                "calendar": "Sélectionner un agenda"
             }
         },
+        "popin": {
+            "header": "Supprimer un événement",
+            "text": "Êtes-vous sûr de vouloir supprimer cet événement ?"
+        },
         "error": {
-            "getCalendarsFailed": "Une erreur est survenue lors de la récupération des agendas"
+            "getCalendarsFailed": "Une erreur est survenue lors de la récupération des agendas",
+            "getJobsFailed": "Une erreur est survenue lors de la récupération des postes de travail",
+            "getEventsJobFailed": "Une erreur est survenue lors de la récupération des événements de l'agenda",
+            "createEventJobFailed": "Une erreur est survenue lors de la création d'un événement dans l'agenda",
+            "updateEventJobFailed": "Une erreur est survenue lors de la modification d'un événement dans l'agenda",
+            "deleteEventJobFailed": "Une erreur est survenue lors de la suppression d'un événement dans l'agenda"
+        },
+        "info": {
+            "createEventJob": "L'événement a été créé",
+            "updateEventJob": "L'événement a été modifié",
+            "deleteEventJob": "L'événement a été supprimé"
         }
     }
 }

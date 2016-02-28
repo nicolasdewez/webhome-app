@@ -9,11 +9,13 @@
     "domains": [
         {
             "key": "home",
+            "icon": "home",
             "name": "menu.home.title",
             "url": "/home"
         },
         {
-            "key": "calendar",
+            "key": "cald",
+            "icon": "calendar",
             "name": "menu.calendar.title",
             "links": [
                 {

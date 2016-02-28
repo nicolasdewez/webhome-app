@@ -19,7 +19,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
 
             new Ndewez\WebHome\CommonBundle\NdewezWebHomeCommonBundle(),
-            new Ndewez\WebHome\CalendarApiBundle\NdewezWebHomeCalendarApiBundle(),
+            new Ndewez\WebHome\AuthApiBundle\NdewezWebHomeAuthApiBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

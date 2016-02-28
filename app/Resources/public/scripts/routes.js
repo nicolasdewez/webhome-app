@@ -19,7 +19,7 @@ module.exports = {
         {
             path: 'cald',
             component: CaldApp,
-            name: <Translate content="cald.title" />,
+            name: <Translate content="breadcrumb.cald.calendar" />,
             indexRoute: {
                 component: CaldHome
             },
@@ -27,14 +27,14 @@ module.exports = {
                 {
                     path: 'calendar/job',
                     component: CaldJobCalendar,
-                    name: <Translate content="cald.calendar.job.title" />
+                    name: <Translate content="breadcrumb.cald.jobCalendar" />
                 }
             ]
         },
         {
             path: 'home',
             component: HomeApp,
-            name: <Translate content="home.title" />
+            name: <Translate content="breadcrumb.home" />
         }
     ]
 };

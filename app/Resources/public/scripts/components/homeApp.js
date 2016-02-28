@@ -11,6 +11,10 @@ module.exports = React.createClass({
      * @return {Object}
      */
     render: function() {
-        return (<Translate content="home.title" />);
+        return (
+            <div>
+                <Translate content="home.title" />
+            </div>
+        );
     }
 });

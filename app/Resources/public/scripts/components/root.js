@@ -3,6 +3,7 @@
 var React = require('react'),
     Breadcrumb = require('react-breadcrumbs'),
     counterpart = require('counterpart'),
+    moment = require('moment'),
     Header = require('./header'),
     Menu = require('./menu'),
     MessageList = require('../components/messageList'),
@@ -18,9 +19,18 @@ var React = require('react'),
      * @return {Object}
      */
     getState = function() {
+        let user = userStore.getUser(),
+            locale = counterpart.getLocale();
+
+        if (user) {
+            counterpart.setLocale(user.locale);
+            moment.locale(user.locale);
+            locale = user.locale;
+        }
+
         return {
-            user: userStore.getUser(),
-            locale: counterpart.getLocale(),
+            user: user,
+            locale: locale,
             messages: messageStore.getMessages(messageConstants.DEFAULT_CHANNEL)
         }
     };
@@ -55,9 +65,6 @@ module.exports = React.createClass({
         counterpart.onLocaleChange(this.onLocaleChange);
         messageStore.addChangeListener(this.onChange);
         userStore.addChangeListener(this.onChange);
-
-        // Get locale from PHP session
-        require('../listeners/localeListener')();
     },
 
     componentWillUnmount: function() {

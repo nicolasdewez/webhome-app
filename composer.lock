@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5d4559c8251fe1a2bb350a8025cf233e",
-    "content-hash": "d0808c828a4dd8ed30f348a41513101b",
+    "hash": "5d95d5482ba659aa14515b4caba47f6b",
+    "content-hash": "4e048473182d068a7064c759c8266c85",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1256,43 +1256,6 @@
             "time": "2016-01-10 21:23:02"
         },
         {
-            "name": "nicolasdewez/webhome-calendar-api",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nicolasdewez/webhome-calendar-api.git",
-                "reference": "9fa5c4557870808750f8f6b6d6b034f76b9398be"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nicolasdewez/webhome-calendar-api/zipball/9fa5c4557870808750f8f6b6d6b034f76b9398be",
-                "reference": "9fa5c4557870808750f8f6b6d6b034f76b9398be",
-                "shasum": ""
-            },
-            "require": {
-                "jms/serializer-bundle": "^1.0",
-                "nicolasdewez/webhome-common": "dev-master",
-                "php": ">=5.3.9",
-                "symfony/framework-bundle": "~2.8",
-                "symfony/monolog-bundle": "~2.4"
-            },
-            "require-dev": {
-                "sensio/generator-bundle": "~2.3"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "Ndewez\\WebHome\\CalendarApiBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "WebHome Project - Calendar Api",
-            "time": "2016-01-06 21:05:45"
-        },
-        {
             "name": "nicolasdewez/webhome-common",
             "version": "dev-master",
             "source": {
@@ -1302,7 +1265,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicolasdewez/webhome-common/zipball/f9fb3d14dcf28ab2aede863511c0bc823569d807",
+                "url": "https://api.github.com/repos/nicolasdewez/webhome-common/zipball/6660d48fec2647a391807c50b2afbb6e270a6e2d",
                 "reference": "f9fb3d14dcf28ab2aede863511c0bc823569d807",
                 "shasum": ""
             },
@@ -2387,8 +2350,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "nicolasdewez/webhome-common": 20,
-        "nicolasdewez/webhome-auth-api": 20,
-        "nicolasdewez/webhome-calendar-api": 20
+        "nicolasdewez/webhome-auth-api": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -61,7 +61,3 @@ hwi_oauth:
                 lastname:   last_name
                 locale:     locale
                 roles:      group.authorizations
-
-ndewez_web_home_calendar_api:
-    api_url: %webhome_calendar_url%
-    api_version: 0

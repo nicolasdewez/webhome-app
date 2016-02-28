@@ -24,8 +24,8 @@ module.exports = React.createClass({
             }),
 
             iconClasses = classNames({
-                'glyphicon-calendar': this.props.suffix === 'calendar',
-                'glyphicon-home': this.props.suffix === 'home',
+                'glyphicon-calendar': this.props.icon === 'calendar',
+                'glyphicon-home': this.props.icon === 'home',
                 glyphicon: true,
                 'subMenu-image': true
             }),

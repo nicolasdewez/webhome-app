@@ -9,17 +9,17 @@ var reqwest = require('../../services/authReqwest'),
     dispatcher = require('../../dispatcher'),
     messageActions = require('../../actions/message'),
 
-    calendars = [],
+    jobs = [],
     store = new Store();
 
 Object.assign(
     store,
     {
-        getCalendars: function() {
-            return calendars.map(function(item) {
+        getJobs: function() {
+            return jobs.map(function(item) {
                 return {
                     value: item.id,
-                    label: item.title
+                    label: item.title + ' (' + item.code + ')'
                 }
             });
         }
@@ -28,16 +28,16 @@ Object.assign(
 
 dispatcher.register(function(payload) {
     switch (payload.action.actionType) {
-        case constants.ACTION_GET_CALENDARS:
+        case constants.ACTION_GET_JOBS:
             reqwest({
-                url: config.url + config.getCalendarsUri,
+                url: config.url + config.getJobsUri,
                 method: 'GET'
             })
             .then(function(response) {
-                calendars = response;
+                jobs = response;
                 store.emitChange();
             }).catch(function(error) {
-                messageActions.addError(translate('cald.error.getCalendarsFailed'), messageConstants.CHANNEL_CALD_JOB_CALENDAR);
+                messageActions.addError(translate('cald.error.getJobsFailed'), messageConstants.CHANNEL_CALD_JOB_CALENDAR);
             });
 
             break;

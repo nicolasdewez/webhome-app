@@ -1,4 +1,9 @@
 {
-    "url": "?WEBHOME_URL?/api/cald",
-    "getCalendarsUri": "/calendars"
+    "url": "?WEBHOME_CALD_URL?/api/v0",
+    "getCalendarsUri": "/calendars",
+    "getJobsUri": "/jobs",
+    "getEventsJobUri": "/calendars/{calendarId}/jobs",
+    "createEventJobUri": "/calendars/{calendarId}/jobs",
+    "updateEventJobUri": "/calendars/{calendarId}/jobs",
+    "deleteEventJobUri": "/calendars/{calendarId}/jobs/{eventId}"
 }

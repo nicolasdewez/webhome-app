@@ -4,7 +4,6 @@ var constant = require('../constants/app');
 
 /**
  * @param {Object|null} user
- * @param {String}      right
  *
  * @return {Boolean}
  */

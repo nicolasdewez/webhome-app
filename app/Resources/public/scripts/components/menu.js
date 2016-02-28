@@ -16,7 +16,7 @@ module.exports = React.createClass({
             cpt = 0,
             classes = classNames({
                 'menu': true,
-                'menu-calendar': 'calendar' == this.props.currentDomain,
+                'menu-calendar': 'cald' == this.props.currentDomain,
                 'menu-home': 'home' == this.props.currentDomain
             });
 
@@ -29,6 +29,7 @@ module.exports = React.createClass({
                 domain.links.forEach(function (link) {
                     if (link.divider) {
                         menuItems.push(<MenuItem key={'key-' + subCpt++} divider="true" />);
+
                         return;
                     }
 
@@ -37,9 +38,9 @@ module.exports = React.createClass({
             }
 
             if (0 === menuItems.length) {
-                subMenus.push(<SubMenu key={'key-' + cpt++} label={domain.name} suffix={domain.key} link={domain.url} isCurrent={isCurrent}></SubMenu>);
+                subMenus.push(<SubMenu key={'key-' + cpt++} label={domain.name} suffix={domain.key} icon={domain.icon} link={domain.url} isCurrent={isCurrent}></SubMenu>);
             } else {
-                subMenus.push(<SubMenu key={'key-' + cpt++} label={domain.name} suffix={domain.key} isCurrent={isCurrent}>{menuItems}</SubMenu>);
+                subMenus.push(<SubMenu key={'key-' + cpt++} label={domain.name} suffix={domain.key} icon={domain.icon} isCurrent={isCurrent}>{menuItems}</SubMenu>);
             }
         }.bind(this));
 
