@@ -1,7 +1,8 @@
 /app/config/parameters.yml
 /app/Resources/public/config/*.json
-/bin/
-!bin/envify
+/bin/*
+!/bin/envify
+!/bin/install
 /build/
 /composer.phar
 /vendor/
